@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  }
+  
+  h1{
+    text-align: center;
+  }
+
+  .maincontainer {
+    position: absolute;
+    margin-left: 28%;
+    height: 200px;
+  }
+  
+  /* Hide the images by default */
+  #mainpic {
+    width: 600px;
+    height: 400px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  #previous,
+  #next {
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  #next {
+    position: absolute;
+    right: 1%;
+    border-radius: 3px 0 0 3px;
+  }
+
+  #previous{
+    position: absolute;
+    right: 92%;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  #previous:hover,
+  #next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+
+  
+  .row{
+    width: 600px;
+    height: 70px;
+    display: inline-block;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  .demo {
+    opacity: 0.6;
+    width: 100px;
+    height: 80px;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .textcontainer {
+    text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  width: 600px;
+  margin-top: -4px;
+  }
